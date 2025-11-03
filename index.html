@@ -178,7 +178,7 @@
             </div>
             <button id="mapillary-direct-btn">
                 <img src="https://play-lh.googleusercontent.com/z3qzEc13E2sDWky9LgqADojcdy8hrX_szuAAeX21k_dFe7GNXLIYXJtOu5RcE3_5Jz8" alt="Mapillary">
-                Open Timmons Broussard Mapillary Data Directly
+                Open Timmons Petersburg Mapillary Data Directly
             </button>
         </div>
         <div id="map"></div>
@@ -221,7 +221,7 @@
             const percent = total > 0 ? Math.round((current / total) * 100) : 0;
             document.getElementById('progress-fill').style.width = percent + '%';
             document.getElementById('progress-text').textContent = 
-                `Request ${current} of ~${total} | ${filtered} images match Timmons Group Broussard filtering criteria`;
+                `Request ${current} of ~${total} | ${filtered} images match Timmons Group Petersburg filtering criteria`;
         };
         
         const showError = (message) => {
@@ -405,7 +405,7 @@
                     return;
                 }
                 
-                status(`Loaded ${imageData.length} Timmons Group images for Broussard, LA (Oct 2025)`);
+                status(`Loaded ${imageData.length} Timmons Group images for Petersburg, VA (Oct/Nov 2025)`);
                 addImagesToMap();
                 
                 // Fit map to show all points
